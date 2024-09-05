@@ -1,0 +1,28 @@
+{
+  "name": "process-runner",
+  "version": "1.0.0",
+  "description": "A Neutralino.js-based process runner for background CLI processes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/process-runner.git"
+  },
+  "keywords": [
+    "process",
+    "cli",
+    "background",
+    "neutralinojs"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/process-runner/issues"
+  },
+  "homepage": "https://github.com/yourusername/process-runner#readme",
+  "dependencies": {
+    "neutralinojs": "^3.0.0"
+  }
+}
