@@ -7,6 +7,7 @@ Heavily inspired by Laravel Process.
 
 ```bash
 npm install neutralino-process-runner
+```
 
 ## Usage
 
