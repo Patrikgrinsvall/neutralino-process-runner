@@ -2,6 +2,7 @@
 
 A Neutralino.js helper module to handle running background processes in a clean and fluent way. It supports running single process, sequentially executed processes (with piping) or concurrently executed processes.
 Heavily inspired by Laravel Process.
+ 
 
 ## Installation
 
@@ -11,13 +12,17 @@ npm install neutralino-process-runner
 
 ## Usage
 
-1. require into your project
-`const Process = require('process-runner');`
+### Require into your project
+```javascript
+const Process = require('process-runner');
+```
 
-2. Initialize the runner itself
-`const processRunner = new Process('/path/to/working_directory');`
+### Initialize the runner itself
+```javascript
+const processRunner = new Process('/path/to/working_directory');
+```
 
-3. Run a simple single command
+### Run a simple single command
 ```javascript
 const Process = require('process-runner');
 const processRunner = new Process('/path/to/working_directory');
@@ -36,7 +41,7 @@ processRunner
   });
 ```
 
-3.1 Explanation line by line
+#### Explanation line by line
 
 ```javascript
 const Process = require('process-runner');
@@ -59,7 +64,7 @@ processRunner
   });
 ```
 
-4. Run a chain of commands sequentially
+### Run a chain of commands sequentially
 
 ```javascript
 const Process = require('process-runner');
@@ -80,8 +85,9 @@ processRunner
   .catch(error => {
     console.error("Error running process:", error);
   });
+```
 
-6. Run commands concurrently
+### Run commands concurrently
 
 ```javascript
 const processRunner = new Process('/path/to/working_directory');
@@ -105,3 +111,4 @@ processRunner
     console.error("Error running processes concurrently:", error);
   });
 ```
+
